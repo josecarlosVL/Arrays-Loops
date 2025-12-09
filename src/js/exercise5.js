@@ -10,6 +10,9 @@ Using a loop, iterate through this array and after console.log "Maria", exit fro
 Write the command that gives the indexOf where "Maria" is located.
 At the end of the exercise, there should be 4 people in the array.
 */
+function exercise5(){
+console.clear();
+console.log("Exercise 5");
 let people = ["Maria", "Dani", "Luis", "Juan", "Camila"]; 
 console.log("Initial List: " + people); //Write a command that prints out all of the people in the list.
 people = people.filter(element => element!=="Dani"); // Write the command to remove "Dani" from the array.
@@ -21,9 +24,11 @@ people.unshift("Luis"); //Put Luis to the fron of the array
 console.log("Luis moved to the front. List: " + people);
 people.push("Carlos"); //My Name added to the end of the array
 console.log("My name added to the end. List: " + people);
-for(i=0;i<people.length;i++){
+for(let i=0;i<people.length;i++){
     console.log(people[i]);
     if (people[i] == "Maria") break;
 }
 console.log("Index of Maria: "+people.findIndex(element => element=="Maria")); //Print the index where Maria is located
 console.log("Final List: " + people); //Show final list with 4 people
+}
+export{exercise5};

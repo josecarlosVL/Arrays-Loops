@@ -11,6 +11,9 @@ Siguiente Par: Avanza al siguiente par (el segundo y el tercero) y repite el pro
 Fin de Pasada: Continúa hasta el final de la lista, haciendo que el elemento más grande "suba" a su posición final.
 Repetición: Repite todo el proceso (pasadas) hasta que en una pasada completa no se necesite hacer ningún intercambio, lo que indica que la lista ya está ordenada. 
 */
+function exercise6(){
+console.clear();
+console.log("Exercise 6");
 let input = [3, 6, 12, 5, 100, 1];
 let aux;
 for (let i=1;i<input.length;i++){
@@ -22,4 +25,5 @@ for (let i=1;i<input.length;i++){
         }
     }
 }
-console.log(input);
+console.log(input);}
+export{exercise6};

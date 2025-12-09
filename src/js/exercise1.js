@@ -11,6 +11,12 @@ printOutString();
 Complete the function to print out the string: This is a sentence.
 
 */
+function exercise1(){
+console.clear();
+console.log("Exercise 1");
 const printOutString = array => array.join(" ");
 let arr = ["This", "is", "a", "sentence."];
 console.log(printOutString(arr));
+}
+
+export {exercise1};
